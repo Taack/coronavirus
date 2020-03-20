@@ -20,5 +20,5 @@ Coronavirus Simulation
 ## Spain
 
 * The variance is high, it is too early
-* The number of total death should be around 4000
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 23
+* The number of total death should be around 6503
+* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 27-28
