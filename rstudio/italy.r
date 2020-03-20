@@ -27,6 +27,6 @@ italy = c(1,
           2978,
           3405
 )
-simulationItaly = pnorm(1:50, mean = 30.07, sd = 7.447) * 3500 / 0.4
+simulationItaly = pnorm(1:50, mean = 31, sd = 8) * 9571
 plot(simulationItaly)
 points(italy, pch = "*")
