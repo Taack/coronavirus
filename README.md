@@ -13,7 +13,7 @@ Coronavirus Simulation
 
 ## Italy
 
-* The number of total Death should be around than 8800
+* The number of total Death should be around 8800
 * The maximum number of death per day should be 2020 / 03 / 21
 * Variance is low
 
