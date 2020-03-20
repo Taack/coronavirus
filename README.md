@@ -13,8 +13,8 @@ Coronavirus Simulation
 
 ## Italy
 
-* The number of total Death should be around 8800
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 21
+* The number of total Death should be around 9571
+* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 22
 * Variance is low
 
 ## Spain

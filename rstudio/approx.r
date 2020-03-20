@@ -1,4 +1,3 @@
-
 # d: dataset, m: mean, sd: width, a: aplitude
 
 normApplitude <- function(d, m, sd) {
