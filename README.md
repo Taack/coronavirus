@@ -16,19 +16,16 @@ Coronavirus Simulation
 
 ## Italy
 
-* The number of total Death should be around 13721 +/- 3063
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 24
-* Variance is low
+* The number of death should be 13721 +/- 3063
+* The peak of death per day date 2020 / 03 / 24
 
 ## Spain
 
-* The variance is high, it is too early
-* The number of total death should be around 8571 +/- 1779
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 27-28
+* The number of death should be 8571 +/- 1779
+* The peak of death per day date 2020 / 03 / 27-28
 
 ## France
 
-* The variance is high
-* The number of total death should be around 11760 +/- 2647
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 04 / 06
+* The number of death should be 11760 +/- 2647
+* The peak of death per day date 2020 / 04 / 06
 
