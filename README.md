@@ -8,17 +8,20 @@ Coronavirus Simulation
 * 10 days to suffer from infection (+/- 3 Days)
 * Lethality of 0.002
 
+# Usage
 
-# Result Analysis
+`source("~/github/coronavirus/rstudio/italy.r", chdir = T)`
+
+# Result Analysis (as of 2020 / 03 / 20)
 
 ## Italy
 
-* The number of total Death should be around 9571
-* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 22
+* The number of total Death should be around 13721 +/- 3063
+* The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 24
 * Variance is low
 
 ## Spain
 
 * The variance is high, it is too early
-* The number of total death should be around 6503
+* The number of total death should be around 8571 +/- 1779
 * The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 27-28
