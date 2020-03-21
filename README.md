@@ -5,7 +5,7 @@ Coronavirus Simulation
 
 * Number of infected >> Number of dead people ;
 * 2,5 Days to double infected population
-* 10 days to suffer from infection (+/- 3 Days)
+* 10 days to suffer from infection (+/- 5 Days)
 * Lethality of 0.002
 
 # Usage
@@ -34,3 +34,7 @@ Coronavirus Simulation
 * The number of death should be 5257 +/- 257
 * The peak of death per day date 2020 / 03 / 27
 
+## USA
+
+* The number of death should be 13561 +/- 2374
+* The peak of death per day date 2020 / 04 / 11
