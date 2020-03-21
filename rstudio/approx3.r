@@ -2,7 +2,7 @@
 
 maxLetality = 0.1
 numberOfDaysDouble = 3
-durationMax <- as.integer(2*log(population, 2 ** (1 / numberOfDaysDouble)))
+durationMax <- as.integer(log(population, 2 ** (1 / numberOfDaysDouble)))
 
 print('Max Duration:')
 print(durationMax)
@@ -12,8 +12,8 @@ log2Population <- as.integer(log2(population * maxLetality))
 print('Log2 Max Dead:')
 print(log2Population)
 
-mTab <- seq(0, durationMax, by = 0.5)
-sdTab <- seq(1.0, (length(mTab) / 4), by = 0.2)
+mTab <- seq(0, durationMax, by = 0.1)
+sdTab <- seq(1.0, durationMax / 6, by = 0.1)
 
 print(mTab)
 print(sdTab)
@@ -56,4 +56,5 @@ for (sd in sdTab) {
     }
   }
 }
-
+print('sdApprox: ')
+print(sdApprox)
