@@ -29,8 +29,9 @@ italy = c(1,
           3405,
           4032
 )
+population = 60000000
 data = italy
-source('./approx2.r')
+source('./approx3.r')
 source('./helper.r')
 simu = plotResults(data, vOrig, aApprox, mApprox, sdApprox)
 printAnalysis(length(data), vOrig, aApprox, mApprox)

@@ -1,7 +1,19 @@
 # d: dataset, m: mean, sd: width, a: aplitude
 
-mTab = c(0:(length(data)+100))
-sdTab = c(1:100)
+maxLetality = 0.1
+numberOfDaysDouble = 3
+durationMax <- as.integer(2*log(population, 2 ** (1 / numberOfDaysDouble)))
+
+print('Max Duration:')
+print(durationMax)
+
+log2Population <- as.integer(log2(population * maxLetality))
+
+print('Log2 Max Dead:')
+print(log2Population)
+
+mTab <- c(0:as.integer(durationMax))
+sdTab <- c(1:as.integer(length(mTab) / 4))
 
 print(mTab)
 print(sdTab)
@@ -11,19 +23,19 @@ aApprox = 0
 mApprox = 0
 sdApprox = 0
 
+
 for (sd in sdTab) {
   for(m in mTab) {
-    pnFast = pnorm(1:length(data), mean = m, sd = sd)
+    pnFast <- pnorm(1:length(data), mean = m, sd = sd)
     
-    # 2**20 == 1048576
-    n <- 25:1
+    n <- (log2Population - 1):1
     aTabPow <- 2 ** n
-    aApproxCur = 2 ** 26
+    aApproxCur = 2 ** log2Population
     vAtAApproxCur = Inf
     for (a in aTabPow) {
-      v = var(data - (pnFast * aApproxCur))
-      vAp = var(data - (pnFast * (aApproxCur + a)))
-      vAm = var(data - (pnFast * (aApproxCur - a)))
+      v <- var(data - (pnFast * aApproxCur))
+      vAp <- var(data - (pnFast * (aApproxCur + a)))
+      vAm <- var(data - (pnFast * (aApproxCur - a)))
      
       
       if (v > vAp && vAm > vAp) {
