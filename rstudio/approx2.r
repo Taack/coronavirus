@@ -19,7 +19,7 @@ aApprox = 0
 mApprox = 0
 sdApprox = 0
 
-for (a in c(5000:20000)) {
+for (a in c(data[length(data)]:20000)) {
   for (sd in sdTab) {
     for(m in mTab) {
       v = normVariance(data, m, sd, a)

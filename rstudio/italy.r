@@ -30,11 +30,6 @@ italy = c(1,
 )
 data = italy
 source('./approx2.r')
-simulationItaly = pnorm(1:50, mean = mApprox, sd = sdApprox) * aApprox
-plot(simulationItaly*(1 + vOrig/simulationItaly[length(italy)]), pch = "+", type = "l")
-points(simulationItaly, pch = "o")
-points(italy, pch = "*")
-points(simulationItaly*(1 - vOrig/simulationItaly[length(italy)]), pch = "-", type = "l")
-
-print(aApprox)
-print(aApprox * vOrig / simulationItaly[length(italy)])
+source('./helper.r')
+simu = plotResults(data, vOrig, aApprox, mApprox, sdApprox)
+printAnalysis(length(data), vOrig, aApprox, mApprox)
