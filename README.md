@@ -29,12 +29,3 @@ Coronavirus Simulation
 * The number of death should be 11760 +/- 2647
 * The peak of death per day date 2020 / 04 / 06
 
-## Iran
-
-* The number of death should be 5257 +/- 257
-* The peak of death per day date 2020 / 03 / 27
-
-## USA
-
-* The number of death should be 13561 +/- 2374
-* The peak of death per day date 2020 / 04 / 11
