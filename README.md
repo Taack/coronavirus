@@ -25,3 +25,10 @@ Coronavirus Simulation
 * The variance is high, it is too early
 * The number of total death should be around 8571 +/- 1779
 * The maximum number of death per day threasold (peak value) should arrive on 2020 / 03 / 27-28
+
+## France
+
+* The variance is high
+* The number of total death should be around 11760 +/- 2647
+* The maximum number of death per day threasold (peak value) should arrive on 2020 / 04 / 06
+
