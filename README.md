@@ -16,10 +16,10 @@ Coronavirus Simulation
 
 ## Italy
 
-* The number of death should be 13721 +/- 3063
-* The peak of death per day date 2020 / 03 / 25
+* The number of death should be 14760 +/- 2637
+* The peak of death per day date 2020 / 03 / 25.5
 
 ## Spain
 
-* The number of death should be 8571 +/- 1779
-* The peak of death per day date 2020 / 03 / 27-28
+* The number of death should be 10960 +/- 2256
+* The peak of death per day date 2020 / 03 / 31.5
