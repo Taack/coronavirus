@@ -25,8 +25,16 @@ italy = c(1,
           2158,
           2503,
           2978,
-          3405
+          3405,
+          4032
 )
-simulationItaly = pnorm(1:50, mean = 31, sd = 8) * 9571
-plot(simulationItaly)
+data = italy
+source('./approx2.r')
+simulationItaly = pnorm(1:50, mean = mApprox, sd = sdApprox) * aApprox
+plot(simulationItaly*(1 + vOrig/simulationItaly[length(italy)]), pch = "+", type = "l")
+points(simulationItaly, pch = "o")
 points(italy, pch = "*")
+points(simulationItaly*(1 - vOrig/simulationItaly[length(italy)]), pch = "-", type = "l")
+
+print(aApprox)
+print(aApprox * vOrig / simulationItaly[length(italy)])

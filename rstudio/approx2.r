@@ -22,7 +22,7 @@ sdApprox = 0
 for (a in c(5000:20000)) {
   for (sd in sdTab) {
     for(m in mTab) {
-      v = normVariance(italy, m, sd, a)
+      v = normVariance(data, m, sd, a)
       if (v < vOrig) {
         sdApprox = sd
         mApprox = m
