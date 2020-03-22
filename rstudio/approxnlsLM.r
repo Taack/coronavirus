@@ -8,7 +8,7 @@ l = as.list(coef(fitDn))
 peak = l$m
 width = l$sd
 amplitude = l$a
-dev = deviance(fitDn)
+amplitudeStdErr = summary(fitDn)$coefficients[3,2]
 devSr = dev ** (1/2)
 print('Amplitude')
 print(amplitude)
@@ -17,12 +17,11 @@ print(width)
 print('peak')
 print(peak)
 print(peak - length(data))
-print('Dev')
-print(dev)
-print(devSr)
+print('amplitudeStdErr')
+print(amplitudeStdErr)
 
 simu = pnorm(1:50, mean = peak, sd = width) * amplitude
-#plot(simu*(1 + devSr/simu[length(data)]), pch = "+", type = "l")
-plot(simu, pch = "o")
+plot(simu*(1 + amplitudeStdErr/amplitude), pch = "+", type = "l")
+points(simu, pch = "o")
 points(data, pch = "*")
-#points(simu*(1 - devSr/simu[length(data)]), pch = "-", type = "l")
+points(simu*(1 - amplitudeStdErr/amplitude), pch = "-", type = "l")
