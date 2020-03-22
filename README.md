@@ -20,9 +20,9 @@ Coronavirus Normal Distribution Evaluation Results with mean of evaluations.
 
 * The number of simulated death should be 13681 (Std Err. 1681)
 * The peak of death per day date 2020 / 03 / 25.2
-* weighted death mean = 10160
-* weighted date mean = 31 (2020 / 03 / 23)
-
+* Weighted death mean = 10160
+* Weighted date mean = 31 (2020 / 03 / 23)
+* Weighted sd mean = 7.98
 
 ## Spain
 * The number of simulated death should be 7923 (Std Err. 4757)
@@ -35,8 +35,9 @@ Variance is very high
 
 * The number of simulated death should be 25957 (Std Err. 6271)
 * The peak of death per day date 2020 / 03 / 31.3
-* weighted death mean = 12178
-* weighted date mean = 32 (2020 / 03 / 24)
+* Weighted death mean = 12178
+* Weighted date mean = 32 (2020 / 03 / 24)
+* Weighted sd mean = 8.42
 
 ## Spain (added 1378)
 
