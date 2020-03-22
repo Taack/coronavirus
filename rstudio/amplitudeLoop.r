@@ -1,15 +1,24 @@
-deathApprox <- function(m, sd, a) {a*pnorm(1:length(data), mean = m, sd = sd)}
-
-results <- c(0)
-stdErr <- c(0)
+results <- c()
+stdErr <- c()
+sumHisto <- c()
+approxMeanAmplitude = 0
+numberOfSamples = length(data) - 11
 for (i in 11:length(data)) {
   historyData <- data[1:i]
+  sumHisto <- c(sumHisto, sum(historyData))
   fitDn <- tryCatch({nlsLM(historyData~a*pnorm(1:i, mean = m, sd = sd), start=list(m=10,sd=2,a=100))},
                     error = function(e) {print(e)})
-  print(as.list(coef(fitDn))$a)
-  stdErr <- c(stdErr, summary(fitDn)$coefficients[3,2])
-  results <- c(results, as.list(coef(fitDn))$a)
+  aCur = as.list(coef(fitDn))$a
+  aCurStdErr = summary(fitDn)$coefficients[3,2]
+  print(aCur)
+  stdErr <- c(stdErr, aCurStdErr)
+  results <- c(results, aCur)
 }
 
 plot(results, type = 'l')
 points(stdErr)
+weightedMean <- weighted.mean(results, sumHisto * results / stdErr)
+print('weightedMean')
+print(weightedMean)
+abline(weightedMean, 0)
+

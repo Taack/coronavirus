@@ -21,6 +21,8 @@ source('./approxnlsLM.r')
 
 * The number of simulated death should be 13681 +/- 1681
 * The peak of death per day date 2020 / 03 / 25.2
+* weighted mean = 10160
+
 
 ## Spain
 * The number of simulated death should be 7923 +/- 4757
@@ -33,6 +35,7 @@ Variance is very high
 
 * The number of simulated death should be 25957 +/- 6271 
 * The peak of death per day date 2020 / 03 / 31.3
+* weighted mean = 12178
 
 ## Spain (added 1378)
 
