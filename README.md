@@ -10,8 +10,8 @@ Coronavirus Normal Distribution Evaluation Results with mean of evaluations.
 
 # Usage
 
-`install.packages("minpack.lm")`
-`library(minpack.lm)`
+`install.packages("minpack.lm")`  
+`library(minpack.lm)`  
 `source("~/github/coronavirus/rstudio/italy.r", chdir = T)`
 
 # Simulation Results (as of 2020 / 03 / 20)
