@@ -1,5 +1,5 @@
 # coronavirus
-Coronavirus Simulation
+Coronavirus Normal Distribution Evaluation Results 
 
 # Hypothesis
 
@@ -10,34 +10,32 @@ Coronavirus Simulation
 
 # Usage
 
+`install.packages("minpack.lm")`
+`library(minpack.lm)`
 `source("~/github/coronavirus/rstudio/italy.r", chdir = T)`
 
 # Simulation Results (as of 2020 / 03 / 20)
 
+source('./approxnlsLM.r')
 ## Italy
 
-* The number of simulated death should be 14272 +/- 2550
+* The number of simulated death should be 13681 +/- 1681
 * The peak of death per day date 2020 / 03 / 25.2
 
 ## Spain
-* The number of simulated death should be 9574 +/- 1978 (sd)
-* The peak of death per day date 2020 / 03 / 30.7
+* The number of simulated death should be 7923 +/- 4757
+* The peak of death per day date 2020 / 03 / 29.5
 
 # Simulation Results (as of 2020 / 03 / 21)
 
+Variance is very high
 ## Italy (added 4825)
 
-### Via direct approx
-* Variance is very high
-* The number of simulated death should be 31710 +/- 10547 
-* The peak of death per day date 2020 / 04 / 01.3
-
-### Via deriv approx
-* The number of simulated death should be 89730 +/- ??? (ATM)
-* The peak of death per day date 2020 / 04 / 10
+* The number of simulated death should be 25957 +/- 6271 
+* The peak of death per day date 2020 / 03 / 31.3
 
 ## Spain (added 1378)
 
-* The number of simulated death should be 14136 +/- 2190
-* The peak of death per day date 2020 / 03 / 31.1
+* The number of simulated death should be 10728 +/- 5111
+* The peak of death per day date 2020 / 03 / 30.1
 
