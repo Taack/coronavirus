@@ -17,8 +17,16 @@ for (i in 11:length(data)) {
 
 plot(results, type = 'l')
 points(stdErr)
-weightedMean <- weighted.mean(results, sumHisto * results / stdErr)
+amplitudeMean <- weighted.mean(results, sumHisto * results / stdErr)
 print('weightedAmplitudeMean')
-print(weightedMean)
-abline(weightedMean, 0)
+print(amplitudeMean)
+
+invStdErrNorm <- normalize.vector(1/stdErr)
+
+print('Var Std Err. Amplitude Weighted')
+#varStdErrAmplitude <- var(abs(results - amplitudeMean)*(sum(stdErr)/(stdErr*mean(stdErr))))
+varStdErrAmplitude <- var(abs(results - amplitudeMean)*invStdErrNorm/length(stdErr))
+print(varStdErrAmplitude)
+
+abline(amplitudeMean, 0)
 

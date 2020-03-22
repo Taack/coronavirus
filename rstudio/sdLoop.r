@@ -21,3 +21,8 @@ print('weightedSdMean')
 print(sdMean)
 abline(sdMean, 0)
 
+invStdErrNorm <- normalize.vector(1/stdErr)
+
+print('Var Std Err. Sd')
+varStdErrSd <- var(abs(results - sdMean)*invStdErrNorm/length(stdErr))
+print(varStdErrSd)
