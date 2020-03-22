@@ -16,12 +16,12 @@ Coronavirus Normal Distribution Evaluation Results
 
 # Simulation Results (as of 2020 / 03 / 20)
 
-source('./approxnlsLM.r')
 ## Italy
 
 * The number of simulated death should be 13681 +/- 1681
 * The peak of death per day date 2020 / 03 / 25.2
-* weighted mean = 10160
+* weighted amplitude mean = 10160
+* weighted date mean = 30 (2020 / 03 / 22)
 
 
 ## Spain
@@ -35,7 +35,8 @@ Variance is very high
 
 * The number of simulated death should be 25957 +/- 6271 
 * The peak of death per day date 2020 / 03 / 31.3
-* weighted mean = 12178
+* weighted amplitude mean = 12178
+* weighted date mean = 32 (2020 / 03 / 24)
 
 ## Spain (added 1378)
 

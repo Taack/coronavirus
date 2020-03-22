@@ -8,17 +8,17 @@ for (i in 11:length(data)) {
   sumHisto <- c(sumHisto, sum(historyData))
   fitDn <- tryCatch({nlsLM(historyData~a*pnorm(1:i, mean = m, sd = sd), start=list(m=10,sd=2,a=100))},
                     error = function(e) {print(e)})
-  aCur = as.list(coef(fitDn))$a
-  aCurStdErr = summary(fitDn)$coefficients[3,2]
-  print(aCur)
-  stdErr <- c(stdErr, aCurStdErr)
-  results <- c(results, aCur)
+  mCur = as.list(coef(fitDn))$m
+  mCurStdErr = summary(fitDn)$coefficients[1,2]
+  print(mCur)
+  stdErr <- c(stdErr, mCurStdErr)
+  results <- c(results, mCur)
 }
 
 plot(results, type = 'l')
 points(stdErr)
 weightedMean <- weighted.mean(results, sumHisto * results / stdErr)
-print('weightedAmplitudeMean')
+print('weightedMeanMean')
 print(weightedMean)
 abline(weightedMean, 0)
 
