@@ -43,6 +43,11 @@ Variance is very high
 
 ## Spain (added 1378)
 
-* The number of simulated death should be 10728 (Std Err. 5111)
-* The peak of death per day date 2020 / 03 / 30.1
+* The number of simulated death should be 11206 (Std Err. 5511)
+* The peak of death per day date 26.51 (2020 / 03 / 28.51)
 
+# Simulation Results (as of 2020 / 03 / 22)
+
+## Spain (modify 1376 to 1381, add 1725)
+* The number of simulated death should be 12874 (Std Err. 4546)
+* The peak of death per day date 27.35 (2020 / 03 / 29.35)
