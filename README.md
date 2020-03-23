@@ -7,7 +7,9 @@ Coronavirus Normal Distribution Evaluation Results with mean of evaluations.
 * Number of infected >> Number of dead people ;
 * 2,5 Days to double infected population
 * 10 days to suffer from infection (+/- 5 Days)
-* Lethality of 0.002
+* Lethality of 0.2% (outside hospital)
+* Lethality of 0.04% (inside hospital)
+* 44 % of the population is over 50
 
 # Usage
 
