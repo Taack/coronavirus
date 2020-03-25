@@ -6,6 +6,7 @@ italy = c(1,2,3,
           2158,2503,2978,3405,4032,4825,5476,
           6078,6820
 )
+startDate = ISOdate(2020, 2, 21)
 population = 60000000
 data = italy
 source('./approxnlsLM.r')

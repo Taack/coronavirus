@@ -9,7 +9,7 @@ printAnalysis <- function(ldata, variance, amplitude, peak) {
 }
 
 plotResults <- function(data, vOrig, aApprox, mApprox, sdApprox) {
-  simu = pnorm(1:50, mean = mApprox, sd = sdApprox) * aApprox
+  simu = pnorm(10:60, mean = mApprox, sd = sdApprox) * aApprox
   plot(simu*(1 + vOrig/simu[length(data)]), pch = "+", type = "l")
   points(simu, pch = "o")
   points(data, pch = "*")
