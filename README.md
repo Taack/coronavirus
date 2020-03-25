@@ -122,6 +122,20 @@ Added Deriv Peak Estimation
 * The peak of death per day date 26.64 (2020 / 03 / 30.64)
 
 # Simulation Results (as of 2020 / 03 / 25)
+
+## Italy (added 7503)
+
+### Via Direct Extrapolation
+* The number of simulated death should be 18397 (Std Err. 1245)
+* The peak of death per day date 36 (2020 / 03 / 28)
+* Weighted death mean = 17809 (Cum Std Err. 6338)
+* Weighted date mean = 35.39 (2020 / 03 / 26.39)
+* Weighted sd mean = 9.16
+
+### Via Deriv Extrapolation
+* The number of simulated death should be 15235 (Std Err. 2446)
+* The peak of death per day date 33.73 (2020 / 03 / 25.73)
+
 ## Spain (Rewrite complete sequence, Added 2991 and 3434)
 
 ### Via Direct Extrapolation
