@@ -7,6 +7,7 @@ france = c(2,3,
            48,61,79,91,127,148,175,
            264,372,450,562,674,860,1100)
 
+startDate = ISOdate(2020, 2, 29)
 population = 67000000
 data = france
 source('./approxnlsLM.r')

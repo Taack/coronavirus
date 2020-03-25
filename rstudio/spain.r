@@ -5,6 +5,7 @@ spain = c(1,2,8,10,17,30,
           533,638,831,1093,1381,1813,2207,
           2696)
 
+startDate = ISOdate(2020, 3, 3)
 population = 46660000
 data = spain
 source('./approxnlsLM.r')

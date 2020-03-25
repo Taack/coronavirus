@@ -15,6 +15,8 @@ Coronavirus Normal Distribution Evaluation Results with mean of evaluations.
 
 `install.packages("minpack.lm")`  
 `library(minpack.lm)`  
+`install.packages("ggplot2")`  
+`library(ggplot2)`  
 `source("~/github/coronavirus/rstudio/italy.r", chdir = T)`  
 `install.packages("ppls")`  
 `library(ppls)`

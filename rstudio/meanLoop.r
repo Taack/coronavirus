@@ -21,6 +21,7 @@ weightedMean <- weighted.mean(results, sumHisto * results / stdErr)
 print('weightedMeanMean')
 print(weightedMean)
 abline(weightedMean, 0)
+print(as.Date(startDate) + weightedMean)
 
 invStdErrNorm <- normalize.vector(1/stdErr)
 

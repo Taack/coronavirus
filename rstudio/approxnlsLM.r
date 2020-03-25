@@ -17,6 +17,7 @@ print(width)
 print('peak')
 print(peak)
 print(peak - length(data))
+print(as.Date(startDate) + peak)
 print('amplitudeStdErr')
 print(amplitudeStdErr)
 
