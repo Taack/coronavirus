@@ -39,7 +39,7 @@ m$simuDates <- as.Date(m$simuDates, origin = startDate)
 g <- ggplot(m, aes(x=simuDates))+geom_point(aes(y=data, color='Real Data'), col="steelblue", size=2)+
   geom_line(aes(y=simu))+
   geom_line(aes(y=simuMin, color = 'Simu. Min.'))+
-  geom_line(aes(y=simuMax, color = 'Simu. Max.'))
+  geom_line(aes(y=simuMax, color = 'Simu. Max.'))+scale_x_date(date_minor_breaks = "1 day", breaks = "10 day")
 
 print(g)
 
