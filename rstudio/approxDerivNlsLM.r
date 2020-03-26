@@ -9,7 +9,6 @@ peak = l$m
 width = l$sd
 amplitude = l$a
 amplitudeStdErr = summary(fitDn)$coefficients[3,2]
-devSr = dev ** (1/2)
 print("***** Deriv Results Start ******")
 print('Amplitude')
 print(amplitude)
